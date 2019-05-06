@@ -24,7 +24,7 @@ public class Main implements NativeKeyListener {
 	public void nativeKeyPressed(NativeKeyEvent e) {
 		System.out.println("Key Pressed: " + NativeKeyEvent.getKeyText(e.getKeyCode()));
 
-		if (e.getKeyCode() == NativeKeyEvent.VC_ESCAPE) {
+		if (e.getKeyCode() == NativeKeyEvent.VC_SPACE) {
 			try {
 				GlobalScreen.unregisterNativeHook();
 			} catch (NativeHookException e1) {
